@@ -1,3 +1,5 @@
 ### Deployed Link [click Here]()
 
-- Hooks used here
+- Hooks useState() used here
+- props parent to child
+- props child to parent using callback()

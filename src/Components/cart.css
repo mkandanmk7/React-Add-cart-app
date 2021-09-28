@@ -8,8 +8,10 @@
 .card {
   padding: 5px;
   width: 300px;
-  background-color: whitesmoke;
-  border: 1px solid black;
+  background-color: rgb(177, 230, 219);
+  /* border: 1px solid black; */
+  box-shadow: 4px 10px 15px;
+  border-radius: 7px;
 }
 
 ul {
@@ -39,4 +41,11 @@ button:hover {
   cursor: pointer;
   background-color: grey;
   color: white;
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 5%;
+  width: 90%;
+  margin-top: 15px;
 }

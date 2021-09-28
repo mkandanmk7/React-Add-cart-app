@@ -1,0 +1,42 @@
+.navContainer {
+  height: 2rem;
+  background-color: #acd;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.card {
+  padding: 5px;
+  width: 300px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  font-size: 13px;
+  filter: drop-shadow(2px 10px 10px);
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.cart {
+  margin-left: auto;
+  padding: 30px;
+}
+button {
+  background: rgb(224, 133, 189);
+  border: none;
+  height: 40px;
+  width: 70px;
+  border-radius: 8px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}

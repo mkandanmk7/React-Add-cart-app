@@ -1,4 +1,5 @@
 import React from "react";
+import "./cart.css";
 
 const Nav = ({ cartCount }) => {
   return (
@@ -13,7 +14,6 @@ const Nav = ({ cartCount }) => {
       </ul>
       <div className="cart">
         <button>
-          {" "}
           <strong>Cart</strong> <span className="cartNo">{cartCount}</span>
         </button>
       </div>

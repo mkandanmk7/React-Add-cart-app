@@ -28,15 +28,32 @@ function App() {
       addedToCart: false,
     },
   ]);
-
   // cart Count details:
 
   const [cart, setCart] = useState(0); //by default cart value is 0;
 
+  // call back () will call by child with child to parent passing data;
+
+  const callBackChild = (data, name) => {
+    setCart(cart + data);
+    console.log(name);
+    items.map((item) => {
+      if (name === item.name) {
+        item.addedToCart = !item.addedToCart;
+      }
+      return item;
+    });
+    console.log(items);
+  };
+
   return (
     <div className="App">
       <Nav cartCount={cart} />
-      <Product />
+      <div className="cardContainer">
+        {items.map((item) => {
+          return <Product value={item} parentCallBack={callBackChild} />;
+        })}
+      </div>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 .navContainer {
   height: 2rem;
+  position: sticky;
+  top: 0;
   background-color: #acd;
   display: flex;
   align-items: center;
@@ -7,6 +9,7 @@
 }
 .card {
   padding: 5px;
+  margin-top: 40px;
   width: 300px;
   background-color: rgb(177, 230, 219);
   /* border: 1px solid black; */

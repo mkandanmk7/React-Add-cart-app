@@ -34,7 +34,7 @@ function App() {
 
   // call back () will call by child with child to parent passing data;
 
-  const callBackChild = (data, name) => {
+  const Child = (data, name) => {
     setCart(cart + data);
     console.log(name);
     items.map((item) => {
@@ -50,8 +50,8 @@ function App() {
     <div className="App">
       <Nav cartCount={cart} />
       <div className="cardContainer">
-        {items.map((item) => {
-          return <Product value={item} parentCallBack={callBackChild} />;
+        {items.map((item, index) => {
+          return <Product key={index} value={item} parent={Child} />;
         })}
       </div>
     </div>

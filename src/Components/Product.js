@@ -1,4 +1,5 @@
 import React from "react";
+import { Children } from "react";
 
 const Product = (props) => {
   const imgsrc = "https://via.placeholder.com/300x300";
@@ -12,13 +13,27 @@ const Product = (props) => {
     console.log(cartName);
     //passing data child to parent using call back ();
 
-    if (cartName === "Add to Cart") props.parentCallBack(1, name);
-    else props.parentCallBack(-1, name);
+    if (cartName === "Add to Cart") props.parent(1, name);
+    else props.parent(-1, name);
   };
+
+  // now child function available in child component (for reference :) below code
+
+  // const Child = (data, name) => {
+  //   setCart(cart + data);  // cart value re- render
+  //   console.log(name);
+  //   items.map((item) => {
+  //     if (name === item.name) {
+  //       item.addedToCart = !item.addedToCart;
+  //     }
+  //     return item;
+  //   });
+  //   console.log(items);
+  // };
 
   return (
     <div className="card">
-      <img src={imgsrc} alt="image" />
+      <img src={imgsrc} alt="" />
       <h2>{name}</h2>
       <p>
         <b>{price}</b>

@@ -13,9 +13,7 @@ const Nav = ({ cartCount }) => {
         <li>Order</li>
       </ul>
       <div className="cart">
-        <button>
-          <strong>Cart</strong> <span className="cartNo">{cartCount}</span>
-        </button>
+        <strong>Cart</strong> <span className="cartNo">{cartCount}</span>
       </div>
     </div>
   );

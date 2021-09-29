@@ -1,5 +1,4 @@
 import React from "react";
-import { Children } from "react";
 
 const Product = (props) => {
   const imgsrc = "https://via.placeholder.com/300x300";
